@@ -1,0 +1,66 @@
+:root {
+  font-family: Inter, "Segoe UI", Arial, sans-serif;
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  color: #24323a;
+  background: #f5f7f8;
+
+  --sans: Inter, "Segoe UI", Arial, sans-serif;
+  --serif: Georgia, "Times New Roman", serif;
+  --canvas: #f5f7f8;
+  --surface: #ffffff;
+  --surface-muted: #f7f9f9;
+  --ink: #24323a;
+  --muted: #74828a;
+  --border: #e4e9eb;
+  --border-strong: #d3dcdf;
+  --teal: #378f82;
+  --teal-dark: #23776c;
+  --teal-soft: #edf6f4;
+}
+
+[data-theme="dark"] {
+  color-scheme: dark;
+  --canvas: #141d23;
+  --surface: #1b282f;
+  --surface-muted: #202f37;
+  --ink: #e7eff0;
+  --muted: #a4b3b8;
+  --border: #304047;
+  --border-strong: #40545c;
+  --teal: #69c3b0;
+  --teal-dark: #83d2c2;
+  --teal-soft: #203c3b;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  color: var(--ink);
+  background: var(--canvas);
+}
+
+body {
+  min-width: 320px;
+  min-height: 100vh;
+  margin: 0;
+  background: var(--canvas);
+}
+
+button,
+input,
+textarea,
+select {
+  font-family: inherit;
+}
+
+::selection {
+  color: #252621;
+  background: #e7d8b7;
+}
